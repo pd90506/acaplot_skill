@@ -33,11 +33,11 @@ See `templates/` for reference implementations of common figure types.
 
 ## Requirements
 
-Python 3 with: matplotlib, seaborn, numpy, pandas, networkx
+Python 3 with: matplotlib, seaborn, numpy, pandas, networkx, scikit-learn
 
 ### Setup
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install matplotlib seaborn numpy pandas networkx
+.venv/bin/pip install matplotlib seaborn numpy pandas networkx scikit-learn
 ```

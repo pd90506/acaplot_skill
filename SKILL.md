@@ -52,7 +52,7 @@ Before running any generated script, ensure the virtual environment exists:
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install matplotlib seaborn numpy pandas networkx
+.venv/bin/pip install matplotlib seaborn numpy pandas networkx scikit-learn
 ```
 
 Always execute scripts with `.venv/bin/python3` instead of the system Python.
@@ -127,6 +127,11 @@ Reference templates in `templates/` for common figure types:
 - `scatter.py` — Cluster visualization (t-SNE/UMAP style)
 - `architecture_diagram.py` — Block diagram with arrows
 - `network_graph.py` — Directed graph
+- `box_plot.py` — Distribution comparison (box/violin)
+- `roc_curve.py` — ROC/PR curves for classification evaluation
+- `subplot_layout.py` — Multi-panel figure with subplots
+- `attention_heatmap.py` — Transformer attention weights visualization
+- `grouped_bar.py` — Multi-dataset grouped comparison with error bars
 
 Read relevant template before generating code. Adapt to user request — do not copy verbatim.
 
