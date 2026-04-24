@@ -44,7 +44,9 @@ digraph acaplot {
 | Heatmaps / confusion matrices | `seaborn.heatmap` / `matplotlib.imshow` |
 | Architecture / flow diagrams | `matplotlib.patches` (FancyBboxPatch, FancyArrowPatch) + `ax.annotate` |
 | Mathematical / geometric | `numpy` + `matplotlib.pyplot` |
-| Network / relationship | `networkx` + `matplotlib.pyplot` |
+| Network / relationship | `graphviz` (dot layout, recommended) or `networkx` + `matplotlib.pyplot` |
+
+**Note:** `graphviz` requires the system library (`brew install graphviz` on macOS, `apt install graphviz` on Linux).
 
 ## Environment Setup
 
@@ -52,7 +54,7 @@ Before running any generated script, ensure the virtual environment exists:
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install matplotlib seaborn numpy pandas networkx scikit-learn
+.venv/bin/pip install matplotlib seaborn numpy pandas networkx scikit-learn graphviz
 ```
 
 Always execute scripts with `.venv/bin/python3` instead of the system Python.
