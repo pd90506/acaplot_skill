@@ -134,6 +134,12 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+# Generated figures
+figures/
+
+# macOS
+.DS_Store
+
 # Environments
 .env
 .envrc
